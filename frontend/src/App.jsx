@@ -23,17 +23,13 @@ import { MovieProvider } from './contexts/MovieContext'
 // }
 
 function App() {
-  const movieNumber = 1;
-
-
   return (
   <MovieProvider>
     <NavBar/>
       <main className="main-content">
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/favorites' element={<Favorites/>}></Route>
-
+        <Route path="/" element={<Home/>}/>
+        <Route path="/favorites" element={<Favorites/>}/>
       </Routes>
     </main>
   </MovieProvider>

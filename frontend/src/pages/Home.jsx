@@ -58,7 +58,7 @@ function Home(){
 
             {error && <div className="error-message">{error}</div>}
 
-            {loading ? <div className="loading">Carregando...</div> : 
+            {loading ? ( <div className="loading">Carregando...</div> ) :( 
 
             <div className="movies-grid">
                 {movies.map(
@@ -67,7 +67,7 @@ function Home(){
                     // <MovieCard movie={movie} key={movie.id} /> 
                     // )  // fazer a pesquisa e a mudança da UI
                 ))}
-            </div> }
+            </div> )}
         </div>
     )
 }
