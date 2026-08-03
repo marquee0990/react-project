@@ -62,11 +62,11 @@ function Home(){
 
             <div className="movies-grid">
                 {movies.map(
-                    (movie) => <MovieCard movie={movie} key={movie.id}/>
+                    (movie) =>( <MovieCard movie={movie} key={movie.id}/>
                     // movie.title.toLowerCase().startsWith(searchQuery)&&(
                     // <MovieCard movie={movie} key={movie.id} /> 
                     // )  // fazer a pesquisa e a mudança da UI
-                )}
+                ))}
             </div> }
         </div>
     )
